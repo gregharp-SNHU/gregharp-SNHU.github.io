@@ -32,7 +32,7 @@ enhancement categories in this capstone project. The review covers the existing 
 improvement, and outlines the planned enhancements for software design and engineering, algorithms and data structures, 
 and databases.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/i5u14bmPsuk" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/i5u14bmPsuk" frameborder="0" allowfullscreen></iframe>
 
 ## Enhancement One: Software Design and Engineering
 *(Coming soon)*
