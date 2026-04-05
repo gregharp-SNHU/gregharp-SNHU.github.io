@@ -77,8 +77,10 @@ repository public before adding `google-services.json` to `.gitignore`. I was ab
 rules, and regenerate the key promptly.
 
 The complete code for this enhancement is available in the 
-[`enhancement_1_sde`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_1_sde) branch.
-
+[`enhancement_1_sde`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_1_sde) 
+branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/baseline)).
+The written narrative is available for download 
+[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS%20499%20Milestone%20Two%20Narrative%20-%20Greg%20Harp.docx).
 
 ### Key Files
 
@@ -99,8 +101,20 @@ The following files are central to this enhancement. Links open the file in the 
 ## Enhancement Two: Algorithms and Data Structures
 *(Coming soon)*
 
+The complete code for this enhancement is available in the 
+[`enhancement_2_dsa`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_2_dsa) 
+branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/baseline)).
+The written narrative is available for download 
+[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS%20499%20Milestone%20Three%20Narrative%20-%20Greg%20Harp.docx).
+
 ## Enhancement Three: Databases
 *(Coming soon)*
+
+The complete code for this enhancement is available in the 
+[`enhancement_3_dbs`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_3_dbs) 
+branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/baseline)).
+The written narrative is available for download 
+[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS%20499%20Milestone%20Four%20Narrative%20-%20Greg%20Harp.docx).
 
 ## Professional Self-Assessment
 *(Coming in Module Seven)*
