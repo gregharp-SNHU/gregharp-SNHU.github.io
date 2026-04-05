@@ -80,7 +80,7 @@ The complete code for this enhancement is available in the
 [`enhancement_1_sde`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_1_sde) 
 branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/baseline)).
 The written narrative is available for download 
-[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS%20499%20Milestone%20Two%20Narrative%20-%20Greg%20Harp.docx).
+[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS499_Milestone_2_Enhancement_1_SDE_Greg_Harp.docx).
 
 ### Key Files
 
@@ -105,7 +105,7 @@ The complete code for this enhancement is available in the
 [`enhancement_2_dsa`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_2_dsa) 
 branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/baseline)).
 The written narrative is available for download 
-[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS%20499%20Milestone%20Three%20Narrative%20-%20Greg%20Harp.docx).
+[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS499_Milestone_3_Enhancement_2_DSA_Greg_Harp.docx).
 
 ## Enhancement Three: Databases
 *(Coming soon)*
@@ -114,7 +114,7 @@ The complete code for this enhancement is available in the
 [`enhancement_3_dbs`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_3_dbs) 
 branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/baseline)).
 The written narrative is available for download 
-[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS%20499%20Milestone%20Four%20Narrative%20-%20Greg%20Harp.docx).
+[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS499_Milestone_4_Enhancement_3_DBS_Greg_Harp.docx).
 
 ## Professional Self-Assessment
 *(Coming in Module Seven)*
