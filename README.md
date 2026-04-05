@@ -40,16 +40,10 @@ and databases.
 
 ## Enhancement One: Software Design and Engineering
 
-My selected artifact is the inventory management application I originally developed for CS-360 in the summer of 2025. 
-The application allows users to manage an inventory of items, with features for adding, editing, and deleting items, adjusting 
-quantities, viewing reports, and receiving SMS alerts when items reach zero stock.
-
-I selected this artifact because it provides a solid foundation for enhancement into a more professional, production application. 
 The original authentication system stored user credentials in plaintext in a local database and gave all users the same access
-despite assignment of different roles.
-
-The first enhancement I implemented was the replacement of the local SQLite credential storage with Firebase Authentication, 
-a cloud-based identity management service. This service handles secure credential storage, login, and password reset. 
+despite assignment of different roles. The first enhancement I implemented was the replacement of the local SQLite credential 
+storage with Firebase Authentication, a cloud-based identity management service. This service handles secure credential storage, 
+login, and password reset. 
 Additionally, user profile data including assigned roles and stored phone numbers was moved to Firebase Firestore. The use 
 of Firebase Authentication also enabled me to add a forgot password function with minimal additional code, as Firebase 
 handles the messaging and reset process directly. These changes are key to transforming the application into a truly multi-user 
