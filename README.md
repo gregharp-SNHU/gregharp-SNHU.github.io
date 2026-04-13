@@ -78,7 +78,7 @@ rules, and regenerate the key promptly.
 
 The complete code for this enhancement is available in the 
 [`enhancement_1_sde`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_1_sde) 
-branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/baseline)).
+branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/compare/baseline...enhancement_1_sde)).
 The written narrative is available for download 
 [here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS499_Milestone_2_Enhancement_1_SDE_Greg_Harp.docx).
 
