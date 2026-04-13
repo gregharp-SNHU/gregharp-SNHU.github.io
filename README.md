@@ -250,9 +250,6 @@ The following files are central to this enhancement. Links open the file in the 
 **Model with String ID**
 - [`InventoryItem.java`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/blob/enhancement_3_dbs/app/src/main/java/com/mobile2app/gregharpinventory/model/InventoryItem.java)
 
-**Firestore security rules**
-- [`firestore.rules`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/blob/enhancement_3_dbs/firestore.rules)
-
 ## Professional Self-Assessment
 *(Coming in Module Seven)*
 
