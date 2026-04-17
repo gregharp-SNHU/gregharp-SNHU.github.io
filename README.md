@@ -29,6 +29,13 @@ search, filter, and sort features using memory- and processor-efficient algorith
 reliability, maintainability, and security. Finally, I have moved the inventory database from local storage to the cloud, 
 Firebase Firestore specifically, making the application finally truly multi-user in nature.
 
+## Professional Self-Assessment
+*(Coming in Module Seven)*
+
+## References
+
+Dijkstra, E. W. (1974). *On the role of scientific thought* (EWD447). E. W. Dijkstra Archive, University of Texas at Austin. https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD447.html
+
 ## Code Review
 
 The embedded video comprises a code review of my original CS 360 project which serves as the artifact for all three 
@@ -249,10 +256,3 @@ The following files are central to this enhancement. Links open the file in the 
 
 **Model with String ID**
 - [`InventoryItem.java`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/blob/enhancement_3_dbs/app/src/main/java/com/mobile2app/gregharpinventory/model/InventoryItem.java)
-
-## Professional Self-Assessment
-*(Coming in Module Seven)*
-
-## References
-
-Dijkstra, E. W. (1974). *On the role of scientific thought* (EWD447). E. W. Dijkstra Archive, University of Texas at Austin. https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD447.html
