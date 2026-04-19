@@ -5,6 +5,7 @@
 **Contents**
 - [Professional Self-Assessment](#professional-self-assessment)
 - [Code Review](#code-review)
+- [Artifact Overview](#artifact-overview)
 - [Enhancement One: Software Design and Engineering](#enhancement-one-software-design-and-engineering)
 - [Enhancement Two: Algorithms and Data Structures](#enhancement-two-algorithms-and-data-structures)
 - [Enhancement Three: Databases](#enhancement-three-databases)
@@ -12,24 +13,175 @@
 
 ---
 
-## Introduction
+## Professional Self-Assessment
 
-My name is Greg Harp. I have enjoyed a career of more than three decades in information technology with a focus in network
-engineering and architecture. I have been fortunate enough to work on the cutting edge of network technology for the majority
-of those years, and even more fortunate to work with incredible people from all over the world who bring their unique thoughts
-and ideas to the evolution of that technology. 
+### Background
 
-Three years ago I decided to complete the computer science education that I began decades before. As I reflect upon my career 
-and my educational journey, I recognize the influence that Edsger Dijkstra had upon me. Dr. Dijkstra is perhaps most famous for
-the Shortest-Path First algorithm that is more commonly called "Dijkstra's Algorithm" which has played a large part in my 
-career as a network engineer and architect. Dijkstra also authored a paper in 1974 entitled *On the role of scientific thought* 
-in which he coined the phrase "separation of concerns" (Dijkstra, 1974). The separation of concerns is fundamentally important
-to the design of both software and hardware such as that used to build computer networks. This structured approach leads to
-systems and software that are more reliable, more maintainable, and as has become increasingly important over time, more secure.
+My name is Greg Harp. I have spent more than three decades in information technology
+with a focus on network engineering and architecture, working on the cutting edge of
+that technology for the majority of those years alongside exceptional people from
+around the world. Three years ago I decided to complete the computer science education
+I had begun decades before, a decision that has deepened my understanding of the
+discipline underlying the work I have done professionally throughout my career.
 
-This ePortfolio presents my capstone project for the SNHU Computer Science program. I selected my CS 360 final project, an 
-Android inventory management application, as the artifact for all three enhancement categories. The original application was 
-a functional classroom project with a local database and basic authentication. 
+As I reflect on that career and this educational journey, I am reminded of the
+influence that Edsger Dijkstra had upon me. I attended the University of Texas at
+Austin when Dijkstra was head of the department, and his thinking shaped mine in ways
+I only fully appreciated later. He is perhaps best known for the Shortest-Path First
+algorithm that bears his name, which has dominated network routing and convergence
+methods for decades and played a central role in my career as a network engineer and
+architect (Dijkstra, 1959). He also coined the phrase "separation of concerns" in a 
+1974 paper, a principle so fundamental to good design that I have applied it to both 
+software and hardware design throughout my career (Dijkstra, 1974). This ePortfolio 
+presents my capstone project for the SNHU Computer Science program. Through three 
+enhancements I transformed a classroom Android inventory management application into 
+a production-ready multi-user system, with separation of concerns as a guiding 
+principle throughout.
+
+### Collaborating in a Team Environment
+
+Code review is among the most important collaborative practices in software
+development. It surfaces defects, maintains shared understanding of the codebase, and
+creates an environment where quality is a team responsibility rather than an individual
+one. Best practices include reviewing small changes frequently, focusing on clarity and
+maintainability rather than stylistic preferences, and ensuring that reviewers
+understand the purpose of the code being examined before evaluating how it accomplishes
+that purpose (OWASP, 2017).
+
+For this capstone I conducted a structured code review of my CS 360 artifact covering
+all three enhancement categories before beginning any implementation work. The
+discipline of preparing and delivering that review -- examining existing code
+critically, documenting planned improvements, and communicating those plans clearly --
+mirrors the practices I employ professionally with my peers and employees. I have 
+consistently emphasized the value of clear in-code documentation and logical modularity 
+not because they make my own work easier, but because they make it possible for others 
+to understand, maintain, and extend that work. The constant classes I introduced in 
+Enhancement One (`DbKeys`, `Roles`, and `Prefs`) are a direct expression of this value.
+They eliminate common and subtle bugs caused by repeated string literals and make the 
+codebase easier for any developer to navigate.
+
+### Communicating with Stakeholders
+
+A theme of my career has been the need to communicate technical concepts clearly to
+audiences with varying levels of technical depth, from network and software engineers
+to non-technical business executives. The ability to adapt both the content and the
+register of a technical explanation to its intended audience is a skill I have
+developed over decades and consider essential.
+
+This capstone has given me an opportunity to demonstrate that skill in written and 
+verbal communications. The code review video demonstrates my ability to communicate 
+planned enhancements to a technical peer audience. The enhancement narratives explain 
+specific implementation decisions and their trade-offs in detail appropriate for a 
+technical evaluator. This self-assessment is written for a broader professional 
+audience. The ePortfolio as a whole is structured to allow any visitor (from an 
+experienced software engineer to someone with a non-technical background) to navigate 
+directly to the content most relevant to them and understand what they find there.
+
+### Data Structures and Algorithms
+
+Algorithmic thinking has been central to my personal and professional work far longer
+than it has been a formal part of my education. Network engineers use algorithms
+constantly. Routing protocols such as OSPF and IS-IS are direct implementations of
+Dijkstra's Shortest-Path First algorithm, and effective network troubleshooting
+requires the same kind of structured decomposition and complexity analysis that
+algorithm design demands. Good network engineers must think algorithmically.
+
+This capstone gave me the opportunity to apply that thinking explicitly in software.
+The skills I demonstrated include selecting algorithms appropriate to the problem,
+justifying those selections with time and space complexity analysis, designing
+multi-key comparators with deterministic behavior, and structuring code to be
+independently testable. I also made deliberate architectural trade-offs such as 
+choosing in-memory filtering over database queries to demonstrate algorithm mastery 
+and to preserve separation of concerns across the data layer boundary. The value of 
+that decision was confirmed when a subsequent enhancement replaced the entire data 
+layer without requiring any changes to the filtering and sorting code.
+
+### Software Engineering and Databases
+
+My career has given me a practical education in what separates software that survives
+from software that doesn't. Systems that are designed for change, that separate their
+concerns cleanly, and that treat security as a constraint rather than an afterthought
+tend to outlast the ones that don't. This capstone gave me the opportunity to
+demonstrate those principles in code.
+
+The skills I applied include cloud service integration, secure authentication and
+authorization design, role-based access control, real-time data synchronization, and
+resource lifecycle management. I also demonstrated the ability to migrate a data layer
+from local SQL storage to a cloud-hosted NoSQL document store while preserving the
+architecture above it -- a skill directly relevant to modern application development
+where the underlying data platform is frequently subject to change. The architectural
+discipline required to accomplish that cleanly is the same discipline I developed
+building infrastructure that had to scale from hundreds of thousands to tens of
+millions of users without being redesigned from scratch.
+
+### Security
+
+Security by design is not a feature to add after the fact. It is a constraint that
+should shape decisions from the beginning. The zero-trust security model formalizes
+this idea, replacing the historically dominant perimeter model (which assumed that
+users and systems inside a security boundary could be trusted) with the principle that
+no user, device, or system is trusted by default regardless of location, and that
+access is granted only after explicit verification of identity and authorization for
+each resource (Rose et al., 2020). This approach shifts security from a boundary that
+can be breached to an inherent property of the system itself.
+
+This principle guided my enhancement work throughout. Firebase Authentication provides
+cryptographically secure credential management with no plaintext storage. Role
+assignments are stored in Firestore and verified at the application layer before any
+privileged operation is permitted. Firestore security rules enforce access controls at
+the database layer independently of the application, ensuring that authenticated
+credentials alone are not sufficient to read or write inventory data. A role assignment
+is also required. This defense-in-depth approach means that a compromise at one layer
+does not automatically grant access at another.
+
+### Portfolio Summary
+
+The three enhancements in this portfolio address a single artifact across all three
+categories, each building on the work that preceded it. Enhancement One established
+the foundation of a secure, multi-user identity system. Enhancement Two added
+filtering and sorting capabilities whose architecture was explicitly designed to be
+independent of the data layer. Enhancement Three completed the migration of the data
+layer to the cloud. The result is an application that began as a standalone classroom 
+project with local storage and plaintext credentials and ended as a cloud-hosted,
+role-controlled, real-time multi-user system with a tested and documented algorithmic 
+layer.
+
+The skills demonstrated here -- secure authentication and authorization, cloud
+integration, algorithm design with time complexity analysis, separation of concerns,
+defensive coding, and clear technical communication -- are the foundation of
+reliable, maintainable, and secure systems. These are essential skills that the
+field of software engineering demands.
+
+## References
+
+Dijkstra, E. W. (1959). A note on two problems in connexion with graphs. *Numerische
+Mathematik, 1*(1), 269--271. https://doi.org/10.1007/BF01386390
+
+Dijkstra, E. W. (1974). *On the role of scientific thought* (EWD447). E. W. Dijkstra
+Archive, University of Texas at Austin.
+https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD447.html
+
+OWASP. (2017). *OWASP Code Review Guide* (Version 2.0). https://owasp.org
+
+Rose, S., Borchert, O., Mitchell, S., & Connelly, S. (2020). *Zero trust architecture*
+(NIST Special Publication 800-207). National Institute of Standards and Technology.
+https://doi.org/10.6028/NIST.SP.800-207
+
+[↑ Top](#greg-harp--computer-science-eportfolio)
+
+## Code Review
+
+The embedded video comprises a code review of my original CS 360 project which serves 
+as the artifact for all three enhancement categories in this capstone project. The 
+review covers the existing functionality, identifies areas for improvement, and outlines 
+the planned enhancements for software design and engineering, algorithms and data structures, 
+and databases.
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/i5u14bmPsuk" frameborder="0" allowfullscreen></iframe>
+
+[↑ Top](#greg-harp--computer-science-eportfolio)
+
+## Artifact Overview
 
 The code for the original CS-360 project is recorded here as a branch called 
 [`baseline`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/baseline).
@@ -41,23 +193,7 @@ search, filter, and sort features using memory- and processor-efficient algorith
 reliability, maintainability, and security. Finally, I have moved the inventory database from local storage to the cloud, 
 Firebase Firestore specifically, making the application finally truly multi-user in nature.
 
-## Professional Self-Assessment
-*(Coming in Module Seven)*
-
-## References
-
-Dijkstra, E. W. (1974). *On the role of scientific thought* (EWD447). E. W. Dijkstra Archive, University of Texas at Austin. https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD447.html
-
-[↑ Top](#greg-harp--computer-science-eportfolio)
-
-## Code Review
-
-The embedded video comprises a code review of my original CS 360 project which serves as the artifact for all three 
-enhancement categories in this capstone project. The review covers the existing functionality, identifies areas for 
-improvement, and outlines the planned enhancements for software design and engineering, algorithms and data structures, 
-and databases.
-
-<iframe width="800" height="450" src="https://www.youtube.com/embed/i5u14bmPsuk" frameborder="0" allowfullscreen></iframe>
+The following sections contain detailed narrative and key examples from each enhancement.
 
 [↑ Top](#greg-harp--computer-science-eportfolio)
 
@@ -77,10 +213,10 @@ manage inventory. Managers can do this as well as view inventory reports. Owners
 to manage other users, including changing roles and deleting accounts. All new accounts are created with basic User access 
 only and must be elevated by an Owner.
 
-I also centralized string literals used throughout the code into dedicated constant classes — `DbKeys`, `Roles`, and 
-`Prefs` — to ensure consistency and eliminate a class of bug where typos in repeated strings produce unexpected behavior. 
-Finally, I removed the old SQLite user database implementation entirely, including `User.java` and `UserDao.java`. No 
-stranded code or abandoned hooks remain from the previous implementation.
+I also centralized string literals used throughout the code into dedicated constant classes
+(`DbKeys`, `Roles`, and `Prefs`) to ensure consistency and eliminate a class of bug where
+typos in repeated strings produce unexpected behavior. Finally, I removed the old SQLite user
+database implementation entirely, including `User.java` and `UserDao.java`.
 
 This enhancement demonstrates the ability to identify and implement requirements consistent with real-world multi-user 
 applications, the recognition of and implementation of secure authentication and role-based access control, integration 
@@ -143,17 +279,17 @@ immediately in the inventory list as partial matches occur with each keypress. T
 view items according to four different stock levels: all items, in-stock-only, low stock, and out of stock. The 
 editable threshold value is stored in `SharedPreferences` on the device to persist across runs.
 
-I implemented sorting options proving the user with case-insensitive ascending and descending alphabetical order as
+I implemented sorting options providing the user with case-insensitive ascending and descending alphabetical order as
 well as ascending and descending item quantity. Rather than writing a custom sort, I chose to build the appropriate 
 comparator based upon user selection and feed it to the standard library Timsort implementation. Timsort is a hybrid 
-merge sort and insertion sort that achieves O(n log n) in the average and worst case, and as fast as O(n) when the 
+merge sort and insertion sort that achieves `O(n log n)` in the average and worst case, and as fast as `O(n)` when the 
 list is already partially sorted. I took special care with the comparators to ensure stable results. For example, 
-when sorting by item quantity collisions are likely so I used item names as a tie-breaker with a deterministic result.
+when sorting by item quantity, collisions are likely so I used item names as a tie-breaker with a deterministic result.
 This promotes a stable user interface where items aren't shifting in some arbitrary order.
 
 All filters and sorting are combined into a single `processAll()` method which applies the specified filter pipeline 
-and then sorts the result. Since each filter stage is O(n) and the sort is O(n log n), the overall complexity is 
-O(n log n), dominated by the sort step. All methods within the `InventoryFilter` class return new lists without 
+and then sorts the result. Since each filter stage is `O(n)` and the sort is `O(n log n)`, the overall complexity is 
+`O(n log n)`, dominated by the sort step. All methods within the `InventoryFilter` class return new lists without 
 modifying the input, which is important for safe interaction with LiveData.
 
 Additionally, I implemented unit tests for the `InventoryFilter` class using JUnit. Because this class is pure Java 
@@ -178,7 +314,7 @@ The complete code for this enhancement is available in the
 [`enhancement_2_dsa`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_2_dsa) 
 branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/compare/baseline...enhancement_2_dsa)).
 
-The written narrative is available for download as
+The written narrative is available for download as a
 [PDF](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/Narrative/CS-499_Enhancement_2_DSA_Narrative_Greg_Harp.pdf) or
 [Word document](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/Narrative/CS-499_Enhancement_2_DSA_Narrative_Greg_Harp.docx).
 
@@ -227,7 +363,7 @@ the `InventoryItem`, `ReportRow`, `ItemRepository`, `ItemViewModel`, `EditItemAc
 `InventoryAdapter`, and `ReportAdapter` classes.
 
 After completing this migration, I removed the last vestiges of the old SQLite item database implementation by deleting 
-the `AppDatabase` and `ItemDao` classes entirely from the project. No stranded or abandoned code remains.
+the `AppDatabase` and `ItemDao` classes entirely from the project.
 
 I also updated the Firestore security rules to add an items collection with appropriate read and write controls. 
 Without these rules, Firebase would have allowed anyone with an authenticated user account to alter the inventory 
@@ -257,15 +393,13 @@ demonstrates best practices in Android development (Outcome 4). The Firestore se
 reflect a deliberate security mindset — the check for a user role assignment anticipates cases where credentials 
 exist but a role has not been assigned or granted (Outcome 5).
 
-The prediction I made in Enhancement Two that the `InventoryFilter` class would survive the migration to Firebase 
-Cloud Firestore without changes proved correct. The deliberate design choice to keep filtering and sorting logic 
-separate from the data source paid off directly during this milestone.
+The prediction I made in Enhancement Two that the `InventoryFilter` class would survive the migration to Firebase Cloud Firestore without changes proved correct. The deliberate design choice to keep filtering and sorting logic separate from the data source paid off directly during this milestone.
 
 The complete code for this enhancement is available in the 
 [`enhancement_3_dbs`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_3_dbs) 
 branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/compare/baseline...enhancement_3_dbs)).
 
-The written narrative is available for download as
+The written narrative is available for download as a 
 [PDF](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/Narrative/CS-499_Enhancement_3_DBS_Narrative_Greg_Harp.pdf) or
 [Word document](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/Narrative/CS-499_Enhancement_3_DBS_Narrative_Greg_Harp.docx).
 
