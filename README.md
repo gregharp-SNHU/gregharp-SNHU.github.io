@@ -1,5 +1,17 @@
 # Greg Harp — Computer Science ePortfolio
 
+---
+
+**Contents**
+- [Professional Self-Assessment](#professional-self-assessment)
+- [Code Review](#code-review)
+- [Enhancement One: Software Design and Engineering](#enhancement-one-software-design-and-engineering)
+- [Enhancement Two: Algorithms and Data Structures](#enhancement-two-algorithms-and-data-structures)
+- [Enhancement Three: Databases](#enhancement-three-databases)
+- [References](#references)
+
+---
+
 ## Introduction
 
 My name is Greg Harp. I have enjoyed a career of more than three decades in information technology with a focus in network
@@ -36,6 +48,8 @@ Firebase Firestore specifically, making the application finally truly multi-user
 
 Dijkstra, E. W. (1974). *On the role of scientific thought* (EWD447). E. W. Dijkstra Archive, University of Texas at Austin. https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD447.html
 
+[↑ Top](#greg-harp--computer-science-eportfolio)
+
 ## Code Review
 
 The embedded video comprises a code review of my original CS 360 project which serves as the artifact for all three 
@@ -44,6 +58,8 @@ improvement, and outlines the planned enhancements for software design and engin
 and databases.
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/i5u14bmPsuk" frameborder="0" allowfullscreen></iframe>
+
+[↑ Top](#greg-harp--computer-science-eportfolio)
 
 ## Enhancement One: Software Design and Engineering
 
@@ -86,8 +102,10 @@ rules, and regenerate the key promptly.
 The complete code for this enhancement is available in the 
 [`enhancement_1_sde`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_1_sde) 
 branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/compare/baseline...enhancement_1_sde)).
-The written narrative is available for download 
-[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS499_Milestone_2_Enhancement_1_SDE_Greg_Harp.docx).
+
+The written narrative is available for download as a
+[PDF](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/Narrative/CS-499_Enhancement_1_SDE_Narrative_Greg_Harp.pdf) or
+[Word document](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/Narrative/CS-499_Enhancement_1_SDE_Narrative_Greg_Harp.docx).
 
 ### Key Files
 
@@ -104,6 +122,8 @@ The following files are central to this enhancement. Links open the file in the 
 **Centralized constants**
 - [`DbKeys.java`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/blob/enhancement_1_sde/app/src/main/java/com/mobile2app/gregharpinventory/model/DbKeys.java)
 - [`Prefs.java`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/blob/enhancement_1_sde/app/src/main/java/com/mobile2app/gregharpinventory/model/Prefs.java)
+
+[↑ Top](#greg-harp--computer-science-eportfolio)
 
 ## Enhancement Two: Algorithms and Data Structures
 
@@ -157,8 +177,10 @@ techniques that deliver value (Outcome 4).
 The complete code for this enhancement is available in the 
 [`enhancement_2_dsa`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_2_dsa) 
 branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/compare/baseline...enhancement_2_dsa)).
-The written narrative is available for download 
-[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS499_Milestone_3_Enhancement_2_DSA_Greg_Harp.docx).
+
+The written narrative is available for download as
+[PDF](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/Narrative/CS-499_Enhancement_2_DSA_Narrative_Greg_Harp.pdf) or
+[Word document](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/Narrative/CS-499_Enhancement_2_DSA_Narrative_Greg_Harp.docx).
 
 ### Key Files
 
@@ -177,6 +199,8 @@ The following files are central to this enhancement. Links open the file in the 
 **Layouts (portrait and landscape)**
 - [`activity_inventory.xml`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/blob/enhancement_2_dsa/app/src/main/res/layout/activity_inventory.xml)
 - [`activity_inventory.xml (land)`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/blob/enhancement_2_dsa/app/src/main/res/layout-land/activity_inventory.xml)
+
+[↑ Top](#greg-harp--computer-science-eportfolio)
 
 ## Enhancement Three: Databases
 
@@ -240,8 +264,10 @@ separate from the data source paid off directly during this milestone.
 The complete code for this enhancement is available in the 
 [`enhancement_3_dbs`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/tree/enhancement_3_dbs) 
 branch ([compare to baseline](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/compare/baseline...enhancement_3_dbs)).
-The written narrative is available for download 
-[here](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/CS499_Milestone_4_Enhancement_3_DBS_Greg_Harp.docx).
+
+The written narrative is available for download as
+[PDF](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/Narrative/CS-499_Enhancement_3_DBS_Narrative_Greg_Harp.pdf) or
+[Word document](https://github.com/gregharp-SNHU/gregharp-SNHU.github.io/blob/main/Narrative/CS-499_Enhancement_3_DBS_Narrative_Greg_Harp.docx).
 
 ### Key Files
 
@@ -256,3 +282,5 @@ The following files are central to this enhancement. Links open the file in the 
 
 **Model with String ID**
 - [`InventoryItem.java`](https://github.com/gregharp-SNHU/CS-499-GregHarpInventory-Android/blob/enhancement_3_dbs/app/src/main/java/com/mobile2app/gregharpinventory/model/InventoryItem.java)
+
+[↑ Top](#greg-harp--computer-science-eportfolio)
